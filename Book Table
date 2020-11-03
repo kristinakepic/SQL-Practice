@@ -1,0 +1,13 @@
+/**
+Basic table of books
+
+by:Kristina Kepic
+date: 11/3/2020
+**/
+
+CREATE TABLE BooksRead (id INTEGER PRIMARY KEY, name TEXT, rating INTEGER );
+INSERT INTO BooksRead VALUES(1, "To Kill a Mockingbird", 4 );
+INSERT INTO BooksRead VALUES(2, "Craking the Coding Interview", 5);
+INSERT INTO BooksRead VALUES(3, "Turtles all the Way Down", 3);
+INSERT INTO BooksRead VALUES(4, "The Martian", 5);
+SELECT * From BooksRead;
