@@ -1,0 +1,26 @@
+/**
+Creates a basic table for a clothing store that keeps track of all the inventory. Prints out a table sorted by price and the total number of items in the store.
+
+by:Kristina Kepic
+date: 11/3/2020
+**/
+
+CREATE TABLE Inventory (barcode INTEGER PRIMARY KEY, item TEXT, price INTEGER, quantity INTEGER, aisle INTEGER);
+INSERT INTO Inventory VALUES (1234, "blue dress", 57, 30, 1);
+INSERT INTO Inventory VALUES (4395, "red shirt", 20, 10, 5);
+INSERT INTO Inventory VALUES (6593, "skinny jeans", 35, 25, 7);
+INSERT INTO Inventory VALUES (5483, "black prom dress", 160, 5, 3);
+INSERT INTO Inventory VALUES (9372, "orange formal shirt", 80, 50, 1);
+INSERT INTO Inventory VALUES (47254, "brown shorts", 27, 10, 4);
+INSERT INTO Inventory VALUES (3729, "yoga pants", 21, 50, 6);
+INSERT INTO Inventory VALUES (4839, "blue jeans", 37, 50, 2);
+INSERT INTO Inventory VALUES (3920, "emerald necklace", 100, 5, 8);
+INSERT INTO Inventory VALUES (3934, "diamond earrings", 150, 2, 8);
+INSERT INTO Inventory VALUES (48305, "band t-shirt", 20, 15, 4);
+INSERT INTO Inventory VALUES (3928, "red jacket", 40, 20, 4);
+INSERT INTO Inventory VALUES (49283, "blue sweatshirt", 23, 15, 2);
+INSERT INTO Inventory VALUES (8392, "red dress", 80, 5, 3);
+INSERT INTO Inventory VALUES (38275, "black dress pants", 57, 10, 1);
+
+SELECT * FROM Inventory ORDER BY price;
+SELECT SUM(quantity) FROM Inventory;
